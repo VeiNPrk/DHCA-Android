@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.vnprk.dhca.views.MainFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_researchListFragment"
+            app:destination="@id/researchListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.vnprk.dhca.views.HistoryFragment"
+        android:label="История исследований"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/researchDetailFragment"
+        android:name="com.vnprk.dhca.views.ResearchDetailFragment"
+        android:label="Исследование"
+        tools:layout="@layout/fragment_research_detail" >
+        <argument
+            android:name="idProject"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/researchListFragment"
+        android:name="com.vnprk.dhca.views.ResearchListFragment"
+        android:label="Доступные исследования"
+        tools:layout="@layout/fragment_research_list" >
+        <action
+            android:id="@+id/action_researchListFragment_to_researchDetailFragment"
+            app:destination="@id/researchDetailFragment" />
+    </fragment>
+</navigation>

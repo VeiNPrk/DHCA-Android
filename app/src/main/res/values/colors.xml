@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#D87565</color>
+    <color name="colorPrimaryDark">#D56E6C</color>
+    <color name="colorPrimaryLight">#838B97</color>
+    <color name="colorAccent">#DE474B</color>
+    <color name="colorText">#000000</color>
+    <color name="colorTextError">#FF0000</color>
+    <color name="colorDone">#43A047</color>
+    <color name="colorUpload">#FF5722</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="mainBodyColor">#F3F4F4</color>
+    <color name="tabViewColor">#F5F5F5</color>
+    <color name="uiLabelSecondaryText">#838B97</color>
+    <color name="uiTextFieldBackground">#F9F9F9</color>
+    <color name="uiTextFieldBorder">#F0F0F0</color>
+    <color name="uiTextFieldPlaceholder">#C1C1C3</color>
+    <color name="viewBodyColor">#FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#F0F0F0</color>
+
+    <color name="mtrl_textinput_disabled_color">#1F000000</color>
+    <color name="mtrl_textinput_filled_box_default_background_color">#0A000000</color>
+    <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
+    <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
+</resources>
